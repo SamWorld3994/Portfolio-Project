@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    @vite('resources/css/app.css')
-</head>
-<body>
-    <h1 class="m-10">This is the Home page</h1>
-</body>
-</html>
+@extends('app')
+@section('content')
+@include('components.loader')
+
+@include('components.herosection')
+@include('components.about')
+@include('components.contactform')
+
+@endsection
