@@ -8,6 +8,6 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <h1 class="m-10">This is a Home page</h1>
+    <h1 class="m-10">This is the Home page</h1>
 </body>
 </html>
