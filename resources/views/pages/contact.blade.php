@@ -1,5 +1,4 @@
 @extends('app')
 @section('content')
-@include('components.loader')
-@include('components.contactform')
+    @include('components.contactform')
 @endsection
