@@ -7,10 +7,13 @@ use Illuminate\Support\Facades\DB;
 
 class ProjectController extends Controller
 {
-    function page(Request $request){
+    public function page(Request $request)
+    {
         return view('pages.project');
     }
-    function projectsData(Request $request){
+
+    public function projectsData(Request $request)
+    {
         return DB::table('projects')->get();
     }
 }

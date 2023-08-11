@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('abouts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title',100);
+            $table->string('title', 100);
             $table->text('details');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();

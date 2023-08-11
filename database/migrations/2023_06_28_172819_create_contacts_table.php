@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('contacts', function (Blueprint $table) {
             $table->id();
-            $table->string('fullName',100);
-            $table->string('email',50);
-            $table->string('phone',50);
+            $table->string('fullName', 100);
+            $table->string('email', 50);
+            $table->string('phone', 50);
             $table->text('message');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
